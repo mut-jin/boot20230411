@@ -12,6 +12,6 @@ WHERE Price >= 10.00;
 SELECT * FROM Products
 WHERE Price <= 10.00;
 SELECT * FROM Employees
-WHERE BrithDate <= '1958-09-19';
+WHERE BirthDate <= '1958-09-19';
 SELECT * FROM Employees
-WHERE BrithDate >= '1958-09-19';
+WHERE BirthDate >= '1958-09-19';

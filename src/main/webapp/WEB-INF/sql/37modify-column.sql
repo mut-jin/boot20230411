@@ -1,0 +1,34 @@
+USE w3schools;
+DESC MyTable13;
+-- MODIFY COLUMN : 컬럼 타입 변경
+ALTER TABLE MyTable13
+MODIFY COLUMN Col20 VARCHAR(40);
+
+SELECT * FROM MyTable13;
+ALTER TABLE MyTable13
+MODIFY COLUMN Col13 VARCHAR(3); -- 위험!!!!
+
+-- 연습) MyTable13에서 아무 컬럼이나 타입 변경
+
+ALTER TABLE MyTable13
+MODIFY COLUMN Col20 INT;
+
+--
+ALTER TABLE MyTable13
+MODIFY COLUMN Col20 INT FIRST;
+ALTER TABLE MyTable13
+MODIFY COLUMN Col20 INT AFTER City;
+DESC MyTable13;
+
+-- 연습) MyTable13 의 아무 컬럼의 위치 변경
+ALTER TABLE MyTable13
+MODIFY COLUMN City VARCHAR(20) AFTER Store;
+DESC MyTable13;
+
+
+
+
+
+
+
+

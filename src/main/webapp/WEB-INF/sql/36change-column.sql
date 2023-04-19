@@ -1,0 +1,18 @@
+-- CHANGE COLUMN 컬럼 변경
+
+DESC MyTable13;
+ALTER TABLE MyTable13
+CHANGE COLUMN Col3 Col13 VARCHAR(20); -- 위험!!
+
+INSERT INTO MyTable13 (Col13) 
+VALUES ('가나다라마바사');
+SELECT * FROM MyTable13;
+
+ALTER TABLE MyTable13
+CHANGE COLUMN Col13 Col3 VARCHAR(3); -- fail, CHANGE하다가 데이터 날라갈 수도 있음
+SELECT * FROM MyTable13;
+
+-- 연습) Col8을 Col20 VARCHAR(20)으로 변경
+ALTER TABLE MyTable13
+CHANGE COLUMN Col8 Col20 VARCHAR(20);
+SELECT * FROM MyTable13;

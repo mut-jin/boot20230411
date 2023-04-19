@@ -25,4 +25,4 @@ VALUES('손흥민', 'London');
 
 SELECT * FROM Employees ORDER BY 1 DESC;
 
-SELECT * FROM Suppliers;
+SELECT * FROM Suppliers ORDER BY 1 DESC;

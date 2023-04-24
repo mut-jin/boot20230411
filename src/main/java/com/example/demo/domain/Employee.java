@@ -9,7 +9,9 @@ public class Employee {
 	private int id;
 	private String lastName;
 	private String firstName;
-	private LocalDate birth;
-	private String photo;
 	private String notes;
+	private String photo;
+	private LocalDate birth;
+	
+	
 }

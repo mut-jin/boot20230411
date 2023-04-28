@@ -31,12 +31,20 @@
 				</c:forEach>
 			</tbody>
 		</table>
-		
+
 		<!-- 페이지네이션 -->
 		<div>
 			<nav aria-label="Page navigation example">
 				<ul class="pagination">
-					
+
+					<c:if test="${currentPageNumber ne 1 }">
+						<li class="page-item">
+							<c:url value="/sub26/link1" var="pageLink">
+								<c:param name="page" value="${startIndex }"></c:param>
+							</c:url>
+							<a href="${pageLink }" class="page-link">처음으로</a>
+						</li>
+					</c:if>
 					<c:if test="${prevPageNumber ge 1 }">
 						<li class="page-item">
 							<c:url value="/sub26/link1" var="pageLink">
@@ -54,13 +62,21 @@
 							<a href="${pageLink }" class="page-link ${pageNumber eq currentPageNumber ? 'active' : '' }">${pageNumber }</a>
 						</li>
 					</c:forEach>
-					
-					<c:if test="${nextPageNumber le lastPageNumber }">
+
+					<c:if test="${nextPageNumber <= lastPageNumber }">
 						<li class="page-item">
 							<c:url value="/sub26/link1" var="pageLink">
 								<c:param name="page" value="${nextPageNumber }"></c:param>
 							</c:url>
 							<a href="${pageLink }" class="page-link">다음</a>
+						</li>
+					</c:if>
+					<c:if test="${currentPageNumber ne lastPageNumber }">
+						<li class="page-item">
+							<c:url value="/sub26/link1" var="pageLink">
+								<c:param name="page" value="${lastPageNumber }"></c:param>
+							</c:url>
+							<a href="${pageLink }" class="page-link">끝으로</a>
 						</li>
 					</c:if>
 				</ul>

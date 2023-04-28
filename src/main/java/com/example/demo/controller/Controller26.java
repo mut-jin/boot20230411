@@ -33,7 +33,8 @@ public class Controller26 {
 		Integer rightPageNumber = leftPageNumber + 9;
 		
 		// 이전 버튼 페이지 번호 구하기
-		Integer prevPageNumber = leftPageNumber - 10;						
+		Integer prevPageNumber = leftPageNumber - 10;
+		// 다음 버튼 페이지 번호 구하기
 		Integer nextPageNumber = rightPageNumber + 1;
 		
 		// 마지막 페이지 구하기

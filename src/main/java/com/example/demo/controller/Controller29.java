@@ -111,9 +111,12 @@ public class Controller29 {
 	
 	@PostMapping("link11")
 	public void method11(@RequestParam("file1") MultipartFile file) throws Exception {
+		System.out.println(file.getOriginalFilename());
+		System.out.println(file.getSize());
 		
 		File target = new File("C:/study/copy11_" + file.getOriginalFilename());
 		file.transferTo(target);
+		
 	}
 }
 

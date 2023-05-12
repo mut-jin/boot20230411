@@ -135,7 +135,6 @@ $("#btn9").click(function() {
 	const name = $("#inputName2").val();
 	const email = $("#inputEmail2").val();
 	const score = $("#inputScore2").val();
-	var radios = document.getElementsByName('married');
 	const married = $("input[name='married']:checked").val();
 	
 	const data = {

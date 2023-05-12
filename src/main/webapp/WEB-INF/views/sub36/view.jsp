@@ -33,10 +33,10 @@
 	<button id="btn8">전송</button>
 	
 	<hr />
-	<input type="text" id="inputName2" placeholder="이름"/>	<br />
-	<input type="text" id="inputEmail2" placeholder="이메일"/> <br />
-	<input type="text" id="inputScore2" placeholder="점수"/> <br />
-	<input type="radio" name="married" value="true" /> true
+	<input type="text" id="inputName2" placeholder="이름" required /> <br />
+	<input type="email" id="inputEmail2" placeholder="이메일" required /> <br />
+	<input type="number" id="inputScore2" placeholder="점수" required /> <br />
+	결혼여부 <input type="radio" name="married" value="true" /> true
 	<input type="radio" name="married" value="false" checked /> false <br />
 	<button id="btn9">전송</button>
 	

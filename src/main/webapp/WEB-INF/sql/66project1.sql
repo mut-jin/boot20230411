@@ -9,3 +9,8 @@ SELECT b.id,
        (SELECT COUNT(*) FROM BoardLike WHERE boardId = b.id) countLike
 FROM Board b LEFT JOIN FileName f ON b.id = f.boardId
 WHERE b.id = 16414;
+
+DESC Member;
+DESC Board;
+DESC BoardLike;
+SELECT * FROM BoardLike;

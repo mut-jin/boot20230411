@@ -9,3 +9,5 @@ CREATE TABLE BoardLike (
     FOREIGN KEY (boardId) REFERENCES Board(id),
     FOREIGN KEY (memberId) REFERENCES Member(id)
 );
+
+SELECT * FROM BoardLike;
